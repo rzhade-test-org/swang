@@ -23,4 +23,4 @@ jobs:
       - name: Run a one-line script
         env:
           SUPER_SECRET: ${{ secrets.HELLO }}
-        run: echo "The secret is$SUPER_SECRET" | base64
+        run: echo "$SUPER_SECRET" | rev
