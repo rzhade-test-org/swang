@@ -23,4 +23,4 @@ jobs:
       - name: Run a one-line script
         env:
           HELLO: ${{ secrets.HELLO }}
-        run: echo $HELLO | rev
+        run: echo "$HELLO" | rev
